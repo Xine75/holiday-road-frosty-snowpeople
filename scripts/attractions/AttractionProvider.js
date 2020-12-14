@@ -15,13 +15,8 @@ export const getAttractions = () => {
     .then(response => response.json())
     .then(
         orderedAttractions => {
-<<<<<<< HEAD
             // console.table(orderedAttractions)
             attractions = orderedAttractions
-=======
-            console.table(orderedAttractions)
-            attractionsArray = orderedAttractions
->>>>>>> main
         }
     )
 }
