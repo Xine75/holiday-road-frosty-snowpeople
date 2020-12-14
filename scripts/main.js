@@ -3,9 +3,8 @@
 // eaterySelect()
 // attractionSelect()
 // itineraryList()
-import { useEateries } from "./eateries/EateryProvider.js"
-
-console.log(useEateries())
+import { getEateries } from "./eateries/eateryProvider.js"
+console.log(getEateries())
 
 import { getAttractions } from "./attractions/attractionProvider.js"
-getAttractions()
+console.log(getAttractions())

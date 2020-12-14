@@ -1,10 +1,10 @@
 // Fetches API data and converts to JS-readable object .json()
 //creates slice of 
 //intialize and empty array
-let eateries = []
+let eateryArray = []
 
 //return a copy of the array 
-export const useEateries = () => eateries.slice()
+export const useEateries = () => eateryArray.slice()
 
 //load database state into application state with a fetch()
 //make sure that last ".then()" set the local eateries array
@@ -16,7 +16,7 @@ export const getEateries = () => {
         .then(
             parsedEateries => {
                 console.table(parsedEateries)
-                eateries = parsedEateries
+                eateryArray = parsedEateries
             }
         )
 
