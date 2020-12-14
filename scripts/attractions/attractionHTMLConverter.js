@@ -1,33 +1,24 @@
 // Translate JS api data into HTML(Will be sent to the List component)
-// Also handles the selectors from the option dropdowns
 
-//imports data for use in Selectors
-import { getAttractions, useAttractions } from "./attractionProvider.js"
 
 //Creates HTML to render to DOM in preview
+//will be imported by previewList
 export const attractionObj = (attraction) => {
     return `
     <article class="preview__attraction">
-    <h1>${attraction.name}</h1>
-    <div class="attraction__description>${attraction.description}</div>
+    <div class="attraction__data">
+    <h1 class="attraction__data--name">${attraction.name}</h1>
+    <p class="attraction__data--description">${attraction.description}</p>
+    <p class="attraction__data--location">${attraction.city}, ${attraction.state}</p></div>
+    <button class="detail--attractions">Details</button>
     </article>
     `
-
 }
-//Declares eventHub variable and where it will be anchored to DOM
-const eventHub = document.querySelector(".container")
+//Checking HTML Converter
+console.log(attractionObj)
 
-//Get a reference to the DOM element whre the <select> will be rendered
-const attractionTarget = document.querySelector("navbar__attraction")
 
-//Create a custom message via eventHub.
-eventHub.addEventListener("change", e => {
-    if(e.target.id === attractionSelect) {
-        detail: {
-            chosenAttraction: e.target.value
-        }
-    }
-})
+
 
 
 
