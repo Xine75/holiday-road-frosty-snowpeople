@@ -8,11 +8,10 @@ console.log(getEateries())
 import { getParks } from "./parks/ParkProvider.js"
 import { getAttractions } from "./attractions/attractionProvider.js"
 
+
+
 getParks()
 getAttractions()
-
-
-
 
 
 
