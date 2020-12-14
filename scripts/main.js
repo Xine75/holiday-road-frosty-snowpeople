@@ -3,9 +3,12 @@
 // eaterySelect()
 // attractionSelect()
 // itineraryList()
-
-import { getAttractions } from "./attractions/attractionProvider.js"
+import { getEateries } from "./eateries/eateryProvider.js"
+console.log(getEateries())
 import { getParks } from "./parks/ParkProvider.js"
+import { getAttractions } from "./attractions/attractionProvider.js"
+
+getParks()
 getAttractions()
 
 
@@ -19,4 +22,7 @@ getAttractions()
 
 
 
-getParks()
+
+
+console.log(getAttractions())
+
