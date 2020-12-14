@@ -1,0 +1,1 @@
+// Handles the user-input itinerary name & save itinerary button in the previewList
