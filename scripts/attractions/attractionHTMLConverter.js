@@ -20,5 +20,14 @@ const eventHub = document.querySelector(".container")
 //Get a reference to the DOM element whre the <select> will be rendered
 const attractionTarget = document.querySelector("navbar__attraction")
 
+//Create a custom message via eventHub.
+eventHub.addEventListener("change", e => {
+    if(e.target.id === attractionSelect) {
+        detail: {
+            chosenAttraction: e.target.value
+        }
+    }
+})
+
 
 
