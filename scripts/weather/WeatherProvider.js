@@ -2,16 +2,21 @@
 // Imports
 import { settings } from "../settings.js";
 
-// Saves the weather API key into a local variable
-const weatherKey = settings.weatherKey;
-
+// Local variable that stores the returned value from getWeather() and is copied by useWeather()
 let weather = [];
 
+// Stores a copy of the weather API key
+const weatherKey = settings.weatherKey;
+
 // city, state and country are the arguments to be passed into a fetch request to the weather API
-export const getWeather = (city, state, country) => {
-    return fetch(`api.openweathermap.org/data/2.5/forecast?q=${city},${state},${country}&mode=json&appid=${weatherKey}`)
+export const getWeather = zip => {
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${zip},us&appid=${weatherKey}`)
         .then(response => response.json())
-        .then(parsedWeather => weather = parsedWeather);
+        .then(parsedWeather => {
+            console.log(parsedWeather)
+            weather = parsedWeather.list
+        })
 };
 
-export const useWitnesses = () => weather.slice();
+// Returns a copy of the weather array
+export const useWeather = () => weather.slice();

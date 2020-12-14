@@ -5,6 +5,15 @@
 // Injects HTML into the DOM (class="forecast")
 
 // Imports
-import { getWeather } from "./weatherProvider.js";
+import { getWeather, useWeather } from "./weatherProvider.js";
 
-export const weatherList = () => getWeather();
+// Selectors
+const eventTarget = document.querySelector('.forecast');
+
+let fiveDayForecast = [];
+
+export const weatherList = (zip) => {
+    getWeather(zip)
+    .then(() => fiveDayForecast = useWeather())
+    .then(() => console.table(fiveDayForecast))
+};
