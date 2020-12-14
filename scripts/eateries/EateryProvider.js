@@ -1,0 +1,1 @@
+// Fetches API data and converts to JS-readable object .json()

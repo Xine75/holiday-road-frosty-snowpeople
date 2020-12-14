@@ -1,0 +1,1 @@
+// Translate JS api data into HTML (Will be sent to the List component)
