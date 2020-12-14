@@ -4,5 +4,5 @@
 // attractionSelect()
 // itineraryList()
 
-import { getAttractions } from "./attractions/AttractionProvider.js"
+import { getAttractions } from "./attractions/attractionProvider.js"
 getAttractions()
