@@ -4,7 +4,10 @@
 // attractionSelect()
 // itineraryList()
 import { getEateries } from "./eateries/eateryProvider.js"
+import { getAttractions } from "./attractions/attractionProvider.js"
+import { EaterySelect } from "./eateries/eaterySelector.js"
+
 console.log(getEateries())
 
-import { getAttractions } from "./attractions/attractionProvider.js"
 console.log(getAttractions())
+EaterySelect()

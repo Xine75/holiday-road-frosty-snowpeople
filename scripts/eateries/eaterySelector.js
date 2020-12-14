@@ -1,7 +1,7 @@
 // Translate JS api data into HTML(Will be sent to the List component)
 // Also handles the selectors from the option dropdowns
 
-import { getEateries, useEateries } from ".eateryProvider.js"
+import { getEateries, useEateries } from "./eateryProvider.js"
 
 
 //Get a refernce to the DOM element where the <select> will be rendered
@@ -11,7 +11,7 @@ const eventHub = document.querySelector(".container")
 //listen for a "change" event 
 eventHub.addEventListener("change", event =>{
     //guard 
-    if(event.target.ed === "eaterySelect"){
+    if(event.target.id === "eaterySelect"){
         //create custom event
         const customEvent = new CustomEvent("eaterySelect", {
             detail : {
@@ -38,13 +38,13 @@ export const EaterySelect = () => {
 const render = eateryCollection => {
     
     contentTarget.innerHTML = `
-        <selction class ="dropdown" id="eaterySelect">
+        <select class ="dropdown" id="eaterySelect">
             <option value="0">Please select an eatery...</option>
             ${
                 eateryCollection.map( eateryObject =>
-                    `<option value ="${eateryObject.id}'> ${eateryObject.businessName} Wheelchair Accessible: ${eateryObject.wheelchairAccessible}</option>`
+                    `<option value ="${eateryObject.id}'> ${eateryObject.businessName}   (Wheelchair Accessible: ${eateryObject.ameneties.wheelchairAccessible})</option>`
                 )
             }        
-        </selction>   
+        </select>   
     `
 }

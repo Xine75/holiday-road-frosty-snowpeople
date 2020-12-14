@@ -10,7 +10,7 @@ export const getAttractions = () => {
     .then(response => response.json())
     .then(
         orderedAttractions => {
-            console.table(orderedAttractions)
+            // console.table(orderedAttractions)
             attractions = orderedAttractions
         }
     )
