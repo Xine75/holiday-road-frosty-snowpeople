@@ -3,15 +3,15 @@
 
 
 
-export const parkHTMLConverter = () => {
+export const parkHTMLConverter = parkObject => {
   return `
     <section class="park__data">
-     <div>
-      <h2>${parkObject.fullName} </h2>
-      <p>Website:${parkObject.url}</p>
-      <p></p>   
-      <button class="detail__parks">Details</button>
-     </div>
+      <div>
+        <h1>${parkObject.fullName}</h2>  
+        <p>Website:${parkObject.url}</p>
+        <p>Description:${parkObject.description}</p>
+      </div>
+       <button class="detail--parks">Details</button>
   </section>
   `
 }

@@ -1,5 +1,5 @@
-// Fetches API data and converts to JS-readable object .json()
-// May store the API data locally if there is an issue with the server
+
+// storing the API data locally as there is a slight issue with fetching it from site
 
 
 let parks = []

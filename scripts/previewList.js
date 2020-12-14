@@ -1,3 +1,9 @@
+import { parkHTMLConverter } from "./parks/parkHTMLConverter.js";
+import { getParks, useParks } from "./parks/ParkProvider.js"
+import { parkSelector } from "./parks/parkSelector.js"
+parkHTMLConverter()
+getParks()
+parkSelector()
 /* 
     ------IMPORTS------
     All HTML converter components (except weather) - These also include selector components
@@ -5,3 +11,23 @@
     All dialogue components (previewList will listen for detail button clicked)
     
 */
+
+
+/* 
+Rendering parks to the DOM
+*/
+const parkPreviewTarget = document.querySelector(".preview__park")
+// let appStateParks = []
+// const parkList = () => {
+//     useParks().then(() => {
+//      renderPark(appStateParks);
+//     });
+//   };
+
+const renderPark = () => {
+    parkPreviewTarget.innerHTML = `${useParks.map((parkObject) => parkHTMLConverter(parkObject))
+      .join("")}
+    `;
+  };
+  
+  parkList()
