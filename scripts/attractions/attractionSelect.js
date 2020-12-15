@@ -41,7 +41,7 @@ the option elements */
 
 attractionTarget.innerHTML = `
     <select class="dropdown" id="attractionSelect">
-    <option value="0">Choose your bizarrarie...</option>
+    <option value="0">Please select your bizarrarie...</option>
     ${
         attractionsCollection.map( (attraction) =>
         `<option value=${attraction.id}>

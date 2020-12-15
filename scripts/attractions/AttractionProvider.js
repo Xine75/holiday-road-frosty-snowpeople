@@ -16,7 +16,7 @@ export const getAttractions = () => {
     .then(
         orderedAttractions => {
             // console.table(orderedAttractions)
-            attractions = orderedAttractions
+            attractionsArray = orderedAttractions
         }
     )
 }
