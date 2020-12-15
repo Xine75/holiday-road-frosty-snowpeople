@@ -3,15 +3,16 @@
 
 //Creates HTML to render to DOM in preview
 //will be imported by previewList
-export const attractionObj = (attraction) => {
+export const attractionHTML = (attraction) => {
     return `
-    <article class="preview__attraction">
-    <div class="attraction__data">
-    <h1 class="attraction__data--name">${attraction.name}</h1>
+    <section class="preview__attraction">
+    <div>
+    <h1 class="attraction__data--name">Attraction: ${attraction.name}</h1>
     <p class="attraction__data--description">${attraction.description}</p>
-    <p class="attraction__data--location">${attraction.city}, ${attraction.state}</p></div>
-    <button class="detail--attractions">Details</button>
-    </article>
+    <p class="attraction__data--location">Location: ${attraction.city}, ${attraction.state}</p>
+    </div>
+    <button class="detail--attractions">Bizararrie Details</button>
+    </section>
     `
 }
 //Checking HTML Converter

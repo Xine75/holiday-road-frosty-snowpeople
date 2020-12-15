@@ -22,7 +22,6 @@ eventHub.addEventListener("change", e => {
     }
     
 })
-
 //Setting up attractionSelect
 export const attractionSelect = () => {
     //Trigger fetching the API data adn loading it into the application state
@@ -33,14 +32,13 @@ export const attractionSelect = () => {
         render(attractionsArray)
     })
 }
-
 const render = attractionsCollection => {
 
 /*Use interpolation to invoke the .map() method on attractionsArray to generate
 the option elements */
 
 attractionTarget.innerHTML = `
-    <select class="dropdown" id="attractionChosen">
+    <select class="dropdown" id="attractionSelect">
     <option value="0">Please select your bizarrarie...</option>
     ${
         attractionsCollection.map( (attraction) =>
