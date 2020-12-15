@@ -23,17 +23,23 @@ export const parkSelector = () => {
 eventHub.addEventListener("change", changeEvent => {
   if (changeEvent.target.id === "parkSelect"){
     const parks = useParks()
+    let parkId = ""
+    let longitude = 0
+    let latitude = 0
     for (const park of parks){
       if(changeEvent.target.value === park.id){
-      return  park.longitude, park.latitude
+      parkId = park.id
+      longitude = park.longitude
+      latitude = park.latitude
+        
       }
     }
     
     const customEvent = new CustomEvent("parkSelected",{
       detail: {
-        parkID: changeEvent.target.value,
-        latitude: park.latitude ,
-        longitude: park.longitude
+        parkID: parkId,
+        latitude: latitude ,
+        longitude: longitude
         
       }
     })
