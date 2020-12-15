@@ -6,4 +6,4 @@
     All dialogue components (previewList will listen for detail button clicked)
     
 */
- import "./parks/parkPreview.js"
+ import "./parks/parkPreview.js" 
