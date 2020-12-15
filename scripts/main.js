@@ -9,6 +9,7 @@ import { EaterySelect } from "./eateries/eaterySelector.js"
 import { getParks } from "./parks/ParkProvider.js"
 import "./weather/weatherList.js";
 import "./previewList.js"
+import "./eateries/eateryPreview.js"
 import { eateryDialog } from "./eateries/eateryDialogue.js"
 
 EaterySelect()

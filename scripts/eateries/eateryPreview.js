@@ -1,11 +1,12 @@
-import { EateryDialog } from "./eateryDialogue.js"
-import { useEateries } from "./EateryProvider.js"
+import { eateryDialog } from "./eateryDialogue.js"
+import { useEateries } from "./eateryProvider.js"
+import { eatery } from "./eateryHTML.js"
 
-const eateryElement = document.querySelector("preview__eatery")
+const eateryElement = document.querySelector(".preview__eatery")
 const eventHub = document.querySelector(".container")
 
 //event listener for details button on eatery selected 
-eateryElement.innerHTML = `${EateryDialog()}`
+// eateryElement.innerHTML = `${eateryDialog()}`
 
 // const render = () =>{
 
@@ -23,7 +24,7 @@ eventHub.addEventListener("eaterySelect", event =>{
         const eateries = useEateries()
         const currentEatery = eateries.find( (eatery) => eatery.id === parseInt(event.detail.eateryChosen))
 
-        return ContentElement.innerHTML = eateryHTML(currentEatery)
+        return eateryElement.innerHTML = eatery(currentEatery)
 
     }
 

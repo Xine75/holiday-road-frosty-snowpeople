@@ -1,5 +1,5 @@
 // Imports
-import { settings } from "../settings.js";
+import { settings } from "../setting.js";
 
 // Local variable that stores the returned value from getWeather() and is copied by useWeather()
 let weather = [];
