@@ -5,6 +5,7 @@ import { parkSelector } from "./parkSelector.js"
 getParks()
 parkSelector()
 
+// const eventHub = document.querySelector(".container")
 
 
 /* 
@@ -20,3 +21,9 @@ const renderPark = () => {
     return parkPreviewTarget
 }; 
   renderPark()
+//eventlistener for selector to render to DOM
+// eventHub.addEventListener("parkSelected", customEvent => {
+//   const parkSelected = customEvent.detail.parkID
+   
+  
+// })
