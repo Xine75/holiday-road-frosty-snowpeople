@@ -12,7 +12,7 @@ export const getWeather = (lat,lon) => {
     return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=imperial&appid=${weatherKey}`)
         .then(response => response.json())
         .then(parsedWeather => weather = parsedWeather.daily)
-    };
+};
 
 // Returns a copy of the weather array
 export const useWeather = () => weather.slice();
