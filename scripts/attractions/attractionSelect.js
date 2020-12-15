@@ -40,7 +40,7 @@ const render = attractionsCollection => {
 the option elements */
 
 attractionTarget.innerHTML = `
-    <select class="dropdown" id="attractionSelect">
+    <select class="dropdown" id="attractionChosen">
     <option value="0">Please select your bizarrarie...</option>
     ${
         attractionsCollection.map( (attraction) =>
