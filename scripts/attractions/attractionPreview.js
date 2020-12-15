@@ -18,10 +18,10 @@ eventHub.addEventListener("attractionChosen", e => {
      console.log("attraction", e.detail)
      
      //Access the array of attractions
-     const attractions = useAttractions()
+     const attractionsArray = useAttractions()
 
-     const matchingAttraction = attractions.find((attraction) => attraction.id === parseInt(e.detail.attractionSelection))
-     console.log("matching attraction", matchingAttraction)
+     const attraction = attractionsArray.find( (attraction) => attraction.id === parseInt(e.detail.attractionSelection))
+     
     }
 })
 
@@ -30,3 +30,11 @@ eventHub.addEventListener("attractionChosen", e => {
 
 
 
+// const renderPark = () => {
+//     getParks().then(() => 
+//      parkPreviewTarget.innerHTML = `${useParks().map((parkObject) => parkHTMLConverter(parkObject)).join("")}
+//     `
+//    )
+//     return parkPreviewTarget
+// }; 
+//   renderPark()
