@@ -10,13 +10,10 @@ const weatherKey = settings.weatherKey;
 
 // city, state and country are the arguments to be passed into a fetch request to the weather API
 export const getWeather = zip => {
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${zip},us&appid=${weatherKey}`)
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${zip},us&units=imperial&appid=${weatherKey}`)
         .then(response => response.json())
-        .then(parsedWeather => {
-            console.log(parsedWeather)
-            weather = parsedWeather.list
-        })
-};
+        .then(parsedWeather => weather = parsedWeather.list)
+    };
 
 // Returns a copy of the weather array
 export const useWeather = () => weather.slice();
