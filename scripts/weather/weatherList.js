@@ -25,8 +25,8 @@ export const weatherList = (lat, lon) => {
     .then(() => {
         allWeather = useWeather()
         // "If the time of the current day is 15:00:00, copy it to fiveDayForecast"
-        const fiveDayForecast = allWeather.filter(day => day.dt_txt.split(" ")[1] === "15:00:00")
-        const weatherToPage = fiveDayForecast.map(day => weatherHTMLConverter(day)).join("")
+        //const fiveDayForecast = allWeather.filter(day => day.dt_txt.split(" ")[1] === "15:00:00")
+        const weatherToPage = allWeather.map(day => weatherHTMLConverter(day)).join("")
         eventTarget.innerHTML = weatherToPage;
     })
 };
@@ -38,4 +38,4 @@ eventHub.addEventListener("parkSelected",(event) => {
     const lat = event.latitude.value;
     const lon = event.longitude.value;
     weatherList(lat, lon);
-})
+});
