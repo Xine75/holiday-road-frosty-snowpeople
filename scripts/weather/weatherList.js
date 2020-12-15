@@ -17,17 +17,23 @@ const eventHub = document.querySelector('.container')
 let allWeather = [];
 
 // Takes weather for the next five days from an area (based off the zip code)
-// Filters out 12:00:00 for the five days (figured afternoon was the best choice)
+// Filters out 15:00:00 for the five days (determined that time was the best choice)
 // Calls on the weatherHTMLConverter to convert the objects into HTML
-// Sends the HTML to the DOM within the section (class="forecast")
+// Sends the HTML to the DOM within the <section> (class="forecast")
 export const weatherList = (zip) => {
     getWeather(zip)
     .then(() => {
         allWeather = useWeather()
-        // "If the time of the current day is 12:00:00, copy it to fiveDayForecast"
-        const fiveDayForecast = allWeather.filter(day => day.dt_txt.split(" ")[1] === "12:00:00")
-        console.log(fiveDayForecast)
+        // "If the time of the current day is 15:00:00, copy it to fiveDayForecast"
+        const fiveDayForecast = allWeather.filter(day => day.dt_txt.split(" ")[1] === "15:00:00")
         const weatherToPage = fiveDayForecast.map(day => weatherHTMLConverter(day)).join("")
         eventTarget.innerHTML = weatherToPage;
     })
 };
+
+// Still in development; talk with Nicholas about the shared event listener
+/*
+eventHub.addEventListener("nameOfEvent",(event) => {
+    weatherList(event.addresses[0].postalCode.value);
+})
+*/
