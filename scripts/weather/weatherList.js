@@ -31,9 +31,11 @@ export const weatherList = (lat, lon) => {
     })
 };
 
-// Still in development; talk with Nicholas about the shared event listener
-/*
-eventHub.addEventListener("nameOfEvent",(event) => {
-    weatherList(event.addresses[0].postalCode.value);
+// Event listener that waits for a new park to be selected. When one is, it transmits a Custom Event named "parkSelected"
+// Once this eventListener is triggered, it will pull the latitude and longitude of the selected park and send the info
+// off to the weatherList() function which is responsible for displaying a five day forecast on the DOM
+eventHub.addEventListener("parkSelected",(event) => {
+    const lat = event.latitude.value;
+    const lon = event.longitude.value;
+    weatherList(lat, lon);
 })
-*/
