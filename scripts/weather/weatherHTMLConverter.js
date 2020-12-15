@@ -24,10 +24,10 @@ export const weatherHTMLConverter = (day) => {
                 ${fullDate}
             </div>
             <div class="forecast__day__minTemp">
-                Min: ${Math.round(day.temp.min)} &#8457
+                Low: ${Math.round(day.temp.min)} &#8457
             </div>
             <div class="forecast__day__maxTemp">
-                Max: ${Math.round(day.temp.max)} &#8457
+                High: ${Math.round(day.temp.max)} &#8457
             </div>
             <div class="forecast__day__desc">
                 ${day.weather[0].description}
