@@ -1,7 +1,7 @@
 import { parkHTMLConverter } from "./parks/parkHTMLConverter.js";
 import { getParks, useParks } from "./parks/ParkProvider.js"
 import { parkSelector } from "./parks/parkSelector.js"
-parkHTMLConverter()
+
 getParks()
 parkSelector()
 /* 
@@ -24,10 +24,12 @@ const parkPreviewTarget = document.querySelector(".preview__park")
 //     });
 //   };
 
+
 const renderPark = () => {
-    parkPreviewTarget.innerHTML = `${useParks.map((parkObject) => parkHTMLConverter(parkObject))
-      .join("")}
-    `;
-  };
-  
-  parkList()
+    getParks().then(() => 
+     parkPreviewTarget.innerHTML = `${useParks().map((parkObject) => parkHTMLConverter(parkObject)).join("")}
+    `
+   )
+    return parkPreviewTarget
+}; 
+  renderPark()
