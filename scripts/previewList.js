@@ -17,13 +17,6 @@ parkSelector()
 Rendering parks to the DOM
 */
 const parkPreviewTarget = document.querySelector(".preview__park")
-// let appStateParks = []
-// const parkList = () => {
-//     useParks().then(() => {
-//      renderPark(appStateParks);
-//     });
-//   };
-
 
 const renderPark = () => {
     getParks().then(() => 
