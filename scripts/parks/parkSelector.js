@@ -22,22 +22,27 @@ export const parkSelector = () => {
 //event to dispatch selection
 eventHub.addEventListener("change", changeEvent => {
   if (changeEvent.target.id === "parkSelect"){
-    const parks = useParks()
-    for (const park of parks){
-      if(changeEvent.target.value === park.id){
-      return  park.longitude, park.latitude
+    getParks().then(() => {
+      const parks = useParks()
+      let parkId = "";
+      let longitude = 0;
+      let latitude = 0;
+      for (const park of parks){
+        if(changeEvent.target.value === park.id){
+          parkId = park.id
+          longitude = park.longitude
+          latitude = park.latitude
+        }
       }
-    }
     
-    const customEvent = new CustomEvent("parkSelected",{
-      detail: {
-        parkID: changeEvent.target.value,
-        latitude: park.latitude ,
-        longitude: park.longitude
-        
-      }
+      const customEvent = new CustomEvent("parkSelected",{
+        detail: {
+          parkID: parkId,
+          latitude: latitude,
+          longitude: longitude
+        }
+      })
+      eventHub.dispatchEvent(customEvent)
     })
-    eventHub.dispatchEvent(customEvent)
   }
 })
- 
