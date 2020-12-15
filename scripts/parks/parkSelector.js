@@ -21,6 +21,7 @@ export const parkSelector = () => {
 
 //event to dispatch selection
 eventHub.addEventListener("change", changeEvent => {
+
   if (changeEvent.target.id === "parkSelect" ){
     const parks = useParks()
     let parkId = "0"
@@ -32,9 +33,10 @@ eventHub.addEventListener("change", changeEvent => {
       longitude = park.longitude
       latitude = park.latitude
         
+
       }
-    }
     
+
     const customEvent = new CustomEvent("parkSelected",{
       detail: {
         parkID: parkId,
@@ -42,8 +44,7 @@ eventHub.addEventListener("change", changeEvent => {
         longitude: longitude
         
       }
+
     })
-    eventHub.dispatchEvent(customEvent)
   }
 })
- 
