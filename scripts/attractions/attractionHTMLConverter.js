@@ -15,7 +15,7 @@ export const attractionObj = (attraction) => {
     `
 }
 //Checking HTML Converter
-console.log(attractionObj)
+//console.log(attractionObj)
 
 
 
