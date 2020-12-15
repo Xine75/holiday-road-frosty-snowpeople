@@ -1,0 +1,12 @@
+.forecast{
+    display:flex;
+}
+
+.forecast__day{
+    border:solid black 1px;
+    padding: 2px;
+    margin: 5px;
+    min-width: 110px;
+    text-align: center;
+    background: lightblue;
+}
