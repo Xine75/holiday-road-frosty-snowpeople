@@ -20,8 +20,8 @@ let allWeather = [];
 // Filters out 15:00:00 for the five days (determined that time was the best choice)
 // Calls on the weatherHTMLConverter to convert the objects into HTML
 // Sends the HTML to the DOM within the <section> (class="forecast")
-export const weatherList = (zip) => {
-    getWeather(zip)
+export const weatherList = (lat, lon) => {
+    getWeather(lat, lon)
     .then(() => {
         allWeather = useWeather()
         // "If the time of the current day is 15:00:00, copy it to fiveDayForecast"

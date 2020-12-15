@@ -14,5 +14,5 @@ EaterySelect()
 console.log(getAttractions())
 console.log(getEateries())
 getParks()
-weatherList("37128");
+weatherList("16.16", "86.78");
 

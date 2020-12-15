@@ -8,6 +8,9 @@ export const weatherHTMLConverter = (day) => `
         <div class="forecast__day__img">
             <img src='/images/weatherImages/${day.weather[0].icon}.png' alt='${day.weather[0].description}'>
         </div>
+        <div class="forecast__day__date">
+            ${day.dt_txt.split(" ")[0]}
+        </div>
         <div class="forecast__day__temp">
             ${day.main.temp} &#8457
         </div>
