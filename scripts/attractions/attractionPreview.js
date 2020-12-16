@@ -1,6 +1,6 @@
 import { getAttractions, useAttractions } from "./AttractionProvider.js"
 import { attractionHTML } from "./attractionHTMLConverter.js"
-import { } from "./attractionDialogue.js"
+import "./attractionDialogue.js"
 
 const eventHub = document.querySelector(".container")
 const attractionPreviewTarget = document.querySelector(".preview__attraction")

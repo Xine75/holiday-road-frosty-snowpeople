@@ -15,8 +15,7 @@ export const attractionHTML = (attraction) => {
     </section>
     `
 }
-//Checking HTML Converter
-//console.log(attractionObj)
+
 
 
 
