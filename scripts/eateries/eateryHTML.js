@@ -18,10 +18,9 @@ eventHub.addEventListener("click",(event) =>{
 export const eatery = (eatery) => {
     return `<article class="preview__eatery">
     <div class="eatery__data">
-    <h2 class= "eatery__data--name">${eatery.businessName} </h2>
+    <h3 class= "eatery__data--name">Eatery: ${eatery.businessName} </h3>
     <p class="eatery__data--description"> ${eatery.description}</p>
-    <p class ="eatery__data--location">Location: ${eatery.city}, ${eatery.state}</p>
-    <p class="eatery__data--accessiblity">Wheelchair Accessible: ${eatery.ameneties.wheelchairAccessible} </div>
+    <p class ="eatery__data--location"> ${eatery.city}, ${eatery.state}</p>
     </div>
     <button type="text" id="eatery--${eatery.id}" class="detail__eatery">Eatery Detail</button>
     </article>
