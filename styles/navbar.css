@@ -1,0 +1,21 @@
+/* Navigation Bar Container */
+.navbar{
+    display:flex;
+    border: solid black 2px;
+    padding: 5px;
+    min-width: 20%;
+    max-width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dropdown{
+    flex-basis: 20%;
+}
+
+#parkSelect, #attractionSelect, #eaterySelect{
+    width: 220px;
+    margin: 5px;
+}
