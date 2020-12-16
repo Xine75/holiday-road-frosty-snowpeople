@@ -6,7 +6,7 @@
 export const parkHTMLConverter = parkObject => {
   return `
     <section class="park__data">
-      <div>
+      <div class="park__data--text">
         <h1>${parkObject.fullName}</h2>  
         <p><a href=${parkObject.url}>${parkObject.fullName} Homepage</a></p>
         <p>Description:${parkObject.description}</p>
