@@ -6,6 +6,13 @@
       "attractionId": "1",
       "eateryId": "1",
       "id": 1
+    },
+    {
+      "name": "this is a test",
+      "parkId": "6DA17C86-088E-4B4D-B862-7C1BD5CF236B",
+      "attractionId": "4",
+      "eateryId": "5",
+      "id": 2
     }
   ]
 }
