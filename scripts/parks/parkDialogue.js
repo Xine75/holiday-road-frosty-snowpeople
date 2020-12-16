@@ -26,7 +26,10 @@ eventHub.addEventListener("parkDetailClicked", customEvent =>{
   parkDialogText.innerHTML = `
     <h3>${clickedPark.name}</h3>
     <p>Entrance Fees:$${clickedPark.entranceFees[0].cost}</p>
-    <p>Directions: ${clickedPark.directionsInfo}</p>
+    <p><a href=${clickedPark.url}>${clickedPark.fullName} Homepage</a></p>
+    <p>Directions: ${clickedPark.directionsInfo} For more directions click <a href=${clickedPark.directionsUrl}>here</a>.</p>
+    
+    
     
   `
 parkDialog.showModal()
