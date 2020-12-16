@@ -27,6 +27,13 @@ eventHub.addEventListener("eateryBtnClicked", event =>{
         dialog.showModal()
 })
 
+export const boolConvert = (bool) =>{
+    if(bool === true){
+        return "yes"
+    }else{
+        return "no"
+    }
+}
 //HTMl converted text for the specfic eatery that was chosen
 //creates the space for the dialog on the DOM note: <dialog>
 export const eateryDialog = (clickedEatery) =>{
@@ -34,14 +41,18 @@ export const eateryDialog = (clickedEatery) =>{
         <dialog id="eateryDialog">
             <div id="eateryDialog__text">
             <h3> ${clickedEatery.businessName} </h3>
-            <div id="wheelchair">Wheelchair accessible: ${clickedEatery.ameneties.wheelchairAccessible}</div>
-            <div id="petFriendly">Pet Friendly: ${clickedEatery.ameneties.petFriendly}</div>
-            <div id="wifi">Wifi: ${clickedEatery.ameneties.wifi}</div>
-            <div id="diaperFacility">Diaper Facility: ${clickedEatery.ameneties.diaperFacility}</div>
-            <div id="playground">Playground: ${clickedEatery.ameneties.playground}</div>
-            <div id="restrooms">Public Restrooms: ${clickedEatery.ameneties.restrooms}</div>
+            <div id="wheelchair">WheelChair♿: ${boolConvert(clickedEatery.ameneties.wheelchairAccessible)}</div>
+            <div id="petFriendly">Pet Friendly🐕: ${boolConvert(clickedEatery.ameneties.petFriendly)}</div>
+            <div id="wifi">Wifi📶: ${boolConvert(clickedEatery.ameneties.wifi)}</div>
+            <div id="diaperFacility">Diaper Facility👶: ${boolConvert(clickedEatery.ameneties.diaperFacility)}</div>
+            <div id="playground">Playground🧒 👧: ${boolConvert(clickedEatery.ameneties.playground)}</div>
+            <div id="restrooms">Public Restrooms🚻: ${boolConvert(clickedEatery.ameneties.restrooms)}</div>
             </div>
             <button id="closeDialog">close</button>
         </dialog>
     `
 }
+
+
+
+
