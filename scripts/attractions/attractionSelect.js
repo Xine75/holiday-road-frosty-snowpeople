@@ -1,7 +1,7 @@
 // Handles the selectors from the option dropdowns
 
 //imports data for use in Selectors
-import { getAttractions, useAttractions } from "./attractionProvider.js"
+import { getAttractions, useAttractions } from "./AttractionProvider.js"
 
 //Declares eventHub variable and where it will be anchored to DOM
 const eventHub = document.querySelector(".container")
@@ -20,32 +20,29 @@ eventHub.addEventListener("change", e => {
         })
         eventHub.dispatchEvent(attractionEvent)
     }
-    
+
 })
 //Setting up attractionSelect
 export const attractionSelect = () => {
     //Trigger fetching the API data adn loading it into the application state
     getAttractions()
-    .then( () => {
-        //Get all attractions from the application state
-        const attractionsArray = useAttractions()
-        render(attractionsArray)
-    })
+        .then(() => {
+            //Get all attractions from the application state
+            const attractionsArray = useAttractions()
+            render(attractionsArray)
+        })
 }
 const render = attractionsCollection => {
 
-/*Use interpolation to invoke the .map() method on attractionsArray to generate
-the option elements */
+    /*Use interpolation to invoke the .map() method on attractionsArray to generate
+    the option elements */
 
-attractionTarget.innerHTML = `
-    <select class="dropdown" id="attractionSelect">
+    attractionTarget.innerHTML = `
+<select class="dropdown" id="attractionSelect">
     <option value="0">Please select your bizarrarie...</option>
-    ${
-        attractionsCollection.map( (attraction) =>
-        `<option value=${attraction.id}>
-        ${attraction.name}</option>
+    ${attractionsCollection.map((attraction) => `<option value=${attraction.id}>${attraction.name}</option>
         `)
-    }
+        }
     </select>
 `}
 
