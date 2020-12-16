@@ -34,25 +34,28 @@ export const EaterySelect = () => {
         })
 }
 
+//function for wheelchair icon 
+//parameter of eatery Object 
+const wheelchairAccessible = (eateryObject) => {
+    if(eateryObject.ameneties.wheelchairAccessible){
+        return "♿ "
+    }else{
+        return ""
+    }     
+}
+
 //Use interpolation here to invoke the map() method on 
 //the eateryCollection to generate the option element
 const render = eateryCollection => {
     
-    const wheelchairAccessible = ""
     contentTarget.innerHTML = `
         <select class ="dropdown" id="eaterySelect">
             <option value="0">Please select an eatery...</option>
             ${
                 eateryCollection.map( eateryObject =>
-                    ${ (() => {if(eateryObject.ameneties.wheelchairAccessible){
-                         wheelchairAccessible = "♿"
-                    }})}
-                        
-                    `<option value ="${eateryObject.id}"> ${eateryObject.businessName}  ${wheelchairAccessible} }</option>`
-                )
-            }        
+                    `<option value ="${eateryObject.id}"> ${eateryObject.businessName}  ${wheelchairAccessible(eateryObject)}</option>`
+            )}        
         </select>   
     `
 }
 
- //♿ ${boolConvert(eateryObject.ameneties.wheelchairAccessible)
