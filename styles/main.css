@@ -5,3 +5,14 @@
 @import "./navbar.css";
 @import "./preview.css";
 
+html {
+    font-style: sans-serif;
+
+}
+
+body {
+    background: linear-gradient(#4dc9e6, #210cae);
+    height: 100%;
+    
+}
+

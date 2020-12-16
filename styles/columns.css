@@ -3,13 +3,22 @@
 }
 
 .leftColumn{
-    flex:50%;
-    border: solid black 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: wheat;
+    flex:70%;
+    border: solid white 1px;
     padding: 5px;
+    min-height: 100px;
+    
 }
 
 .rightColumn{
-    flex:50%;
-    border: solid black 1px;
+    flex:30%;
+    border: solid white 1px;
     padding: 5px;
+    
+}
+.rightColumn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: wheat;
 }
