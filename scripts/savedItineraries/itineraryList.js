@@ -12,7 +12,7 @@ import { itineraryHTMLer } from "./itineraryHTMLConverter.js";
 import { getItineraries, useItineraries } from "./itineraryDataProvider.js";
 
 // Selectors
-const itineraryLocation = document.querySelector(".itineraryContainer");
+const itineraryLocation = document.querySelector(".savedItineraries");
 const eventHub = document.querySelector(".container");
 
 let itineraries = [];

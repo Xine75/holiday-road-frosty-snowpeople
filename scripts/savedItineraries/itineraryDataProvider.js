@@ -23,7 +23,7 @@ export const getItineraries = () => {
 export const useItineraries = () => itineraries.slice();
 
 export const saveItinerary = itinerary => {
-    return fetch('http://localhost:8088/itinerary', {
+    return fetch('http://localhost:8088/itineraries', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

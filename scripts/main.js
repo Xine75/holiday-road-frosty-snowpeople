@@ -10,6 +10,7 @@ import { getParks } from "./parks/ParkProvider.js"
 import "./weather/weatherList.js";
 import "./previewList.js"
 import "./eateries/eateryPreview.js"
+import "./savedItineraries/itineraryForm.js";
 
 EaterySelect()
 console.log(getAttractions())
