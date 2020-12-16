@@ -6,13 +6,21 @@ import { useAttractions } from "./AttractionProvider.js"
 const eventHub = document.querySelector(".container")
 const attractionDialog = document.querySelector("#attractionDialog")
 
+const boolConvert = (bool) => {
+    if(bool === true) {
+        return "yes"
+    } else {
+        return "no"
+    }
+}
+
 //Renders the dialog box to the DOM for a specific attraction when invoked
 const dialogBox = (attraction) => {
     attractionDialog.innerHTML = `
     <dialog id="dialog">
     <h2>${attraction.name}</h2>
-    <h3>Sells souvenirs? ${attraction.ameneties.souvenirs}</h3>
-        <h3>Restroom available? ${attraction.ameneties.restrooms}</h3>
+    <h3>Sells souvenirs? ${boolConvert(attraction.ameneties.souvenirs)}</h3>
+        <h3>Restroom available? ${boolConvert(attraction.ameneties.restrooms)}</h3>
         
  
     <button class="button--close" id="button--close">Close</button>
