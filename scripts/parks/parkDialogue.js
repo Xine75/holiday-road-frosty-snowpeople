@@ -7,9 +7,12 @@ import { useParks } from "./ParkProvider.js";
 const eventHub = document.querySelector(".container")
 
 
-eventHub.addEventListener("click", event =>{
-  if (event.target.id === "closeDialog"){
-    parkDialog.close()
+const dialogClose = document.querySelector(".container")
+
+dialogClose.addEventListener("click", event =>{
+  if (event.target.id === "closeDialog__park"){
+    const dialog = document.querySelector("#parkDialog")
+    return dialog.close()
   }
 })
 
