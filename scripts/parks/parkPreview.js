@@ -1,9 +1,10 @@
+import { parkDialog } from "./parkDialogue.js";
 import { parkHTMLConverter } from "./parkHTMLConverter.js";
 import { useParks } from "./ParkProvider.js"
 import { parkSelector } from "./parkSelector.js"
 
 parkSelector()
-
+parkDialog()
 const eventHub = document.querySelector(".container")
 
 
@@ -28,7 +29,7 @@ eventHub.addEventListener("parkSelected", customEvent => {
     const parkArray = useParks()
     const foundPark =
     parkArray.find( parkObject => parkObject.id === customEvent.detail.parkID )
-   return  parkPreviewTarget.innerHTML = parkHTMLConverter(foundPark)
+   return  parkPreviewTarget.innerHTML =` ${parkHTMLConverter(foundPark)} ${parkDialog()}`
     }
    
 })
