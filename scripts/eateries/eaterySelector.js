@@ -42,7 +42,7 @@ const render = eateryCollection => {
             <option value="0">Please select an eatery...</option>
             ${
                 eateryCollection.map( eateryObject =>
-                    `<option value ="${eateryObject.id}'> ${eateryObject.businessName}   (Wheelchair Accessible: ${eateryObject.ameneties.wheelchairAccessible})</option>`
+                    `<option value ="${eateryObject.id}"> ${eateryObject.businessName}   (Wheelchair Accessible: ${eateryObject.ameneties.wheelchairAccessible})</option>`
                 )
             }        
         </select>   
