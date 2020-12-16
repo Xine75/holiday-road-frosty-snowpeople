@@ -10,8 +10,11 @@
     flex: wrap;
 }
 
-.park__data--text{
+.park__data{
     max-width: 80%;
+    display: flex;
+    flex: wrap;
+    
 }
 
 .preview__attraction {
