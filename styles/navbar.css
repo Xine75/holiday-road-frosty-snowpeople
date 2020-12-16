@@ -1,14 +1,26 @@
 /* Navigation Bar Container */
 .navbar{
-    display:flex;
+    /* display:flex; */
     border: solid black 2px;
     padding: 5px;
     min-width: 20%;
     max-width: 80%;
     border-radius: 10px;
     margin: auto;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+}
+.navbar_select{
+    display:flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+.navbar_title{
+    font-size: larger;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .dropdown{
