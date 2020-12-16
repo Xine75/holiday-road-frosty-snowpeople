@@ -10,7 +10,7 @@ const attractionDialog = document.querySelector("#attractionDialog")
 const dialogBox = (attraction) => {
     attractionDialog.innerHTML = `
     <dialog id="dialog">
-    
+    <h2>${attraction.name}</h2>
     <h3>Sells souvenirs? ${attraction.ameneties.souvenirs}</h3>
         <h3>Restroom available? ${attraction.ameneties.restrooms}</h3>
         
