@@ -4,6 +4,7 @@
 @import "./itineraries.css";
 @import "./navbar.css";
 @import "./preview.css";
+@import "./title.css";
 
 html {
     font-style: sans-serif;
@@ -15,4 +16,6 @@ body {
     height: 100%;
     
 }
+
+
 

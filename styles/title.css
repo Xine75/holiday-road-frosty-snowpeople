@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    flex: wrap;
+}
+
+.title{
+    text-align: center;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 
+align-items
+justify-content
+ */
