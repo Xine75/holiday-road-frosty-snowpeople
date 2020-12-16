@@ -2,6 +2,7 @@
 // Also handles the selectors from the option dropdowns
 
 import { getEateries, useEateries } from "./eateryProvider.js"
+import { boolConvert } from "./eateryDialogue.js"
 
 
 //Get a refernce to the DOM element where the <select> will be rendered
@@ -33,6 +34,16 @@ export const EaterySelect = () => {
         })
 }
 
+//function for wheelchair icon 
+//parameter of eatery Object 
+const wheelchairAccessible = (eateryObject) => {
+    if(eateryObject.ameneties.wheelchairAccessible){
+        return "♿ "
+    }else{
+        return ""
+    }     
+}
+
 //Use interpolation here to invoke the map() method on 
 //the eateryCollection to generate the option element
 const render = eateryCollection => {
@@ -42,9 +53,9 @@ const render = eateryCollection => {
             <option value="0">Please select an eatery...</option>
             ${
                 eateryCollection.map( eateryObject =>
-                    `<option value ="${eateryObject.id}"> ${eateryObject.businessName}   (Wheelchair Accessible: ${eateryObject.ameneties.wheelchairAccessible})</option>`
-                )
-            }        
+                    `<option value ="${eateryObject.id}"> ${eateryObject.businessName}  ${wheelchairAccessible(eateryObject)}</option>`
+            )}        
         </select>   
     `
 }
+
