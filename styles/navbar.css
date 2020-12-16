@@ -1,0 +1,20 @@
+.navbar{
+    display:flex;
+    border: solid black 2px;
+    padding: 5px;
+    min-width: 20%;
+    max-width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar__park, .navbar__attraction, .navbar__eatery{
+    flex-basis: 20%;
+}
+
+#parkSelect, #attractionSelect, #eaterySelect{
+    width: 190px;
+    margin: 5px;
+}
