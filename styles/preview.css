@@ -1,7 +1,9 @@
 .preview {
     display:flex;
     flex-wrap: wrap;
-    
+
+
+    /* Styling on park preview section */
 }
 .preview__park {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -9,14 +11,21 @@
     display: flex;
     flex: wrap;
 }
-
 .park__data{
     max-width: 80%;
     display: flex;
     flex: wrap;
-    
 }
-
+.detail--park {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #81b29a;
+}
+/* Styling on attraction preview section */
 .preview__attraction {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: gainsboro;
@@ -26,7 +35,17 @@
 .preview__attraction--text {
     max-width: 80%;
 }
+.detail--attractions {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #81b29a;
+}
 
+/* Styling on eatery preview section */
 .preview__eatery {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: gainsboro;
@@ -37,7 +56,7 @@
     max-width: 80%;
 }
 
-button {
+.detail__eatery {
     display:block;
     height: 100px;
     width: 100px;
@@ -47,3 +66,4 @@ button {
     background-color: #81b29a;
 
 }
+
