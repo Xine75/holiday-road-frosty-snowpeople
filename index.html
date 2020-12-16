@@ -27,44 +27,32 @@
                 <div class="navbar__park">Park Options</div>
                 <div class="navbar__attraction">Attraction Options</div>
                 <div class="navbar__eatery">Eatery Options</div>
-            </nav>
-            <article class="listContainer">
-                <div class="leftColumn">Your Current Choices
-                
-                    <section class="preview">
-                        <!-- Should these be handled in the preview list or hard coded? -->
-                        <div class="preview__park"></div>
-                        <div class="preview__attraction"></div>
-                        <div id="attractionDialog"></div>
-                        <div class="preview__eatery"></div>
-                        <div class="itineraryFormContainer">
-                            <input type="text" id="itineraryName" size="40" placeholder="Please enter an itinerary name">
-                            <input type="button" id="saveItinerary" value="Save Itinerary" disabled>
-                        </div>
-                    </section>
-                    <section class="forecast">
-                        <!-- 5 Day forecast will go here -->
-                    </section>
-                </div>
-                <aside class="itineraryContainer rightColumn">
-                    <h3>Your Itineraries</h3>
-                    <div class="savedItineraries">
-                        <!-- Saved Itineraries will go here -->
+        </nav>
+        <article class="listContainer">
+            <div class="leftColumn">Your Current Choices
+
+                <section class="preview">
+                    <!-- Should these be handled in the preview list or hard coded? -->
+                    <div class="preview__park"></div>
+                    <div class="preview__attraction"></div>
+                    <div id="attractionDialog"></div>
+                    <div class="preview__eatery"></div>
+                    <div class="itineraryFormContainer">
+                        <input type="text" id="itineraryName" size="40" placeholder="Please enter an itinerary name">
+                        <input type="button" id="saveItinerary" value="Save Itinerary" disabled>
                     </div>
-                </aside>
-            </article>
-            <!-- how many dialog containers do we want to have on the index.html?? -->
-            <section class="dialogContainer"></section>
-        </main>
-        <footer>
-            <div class="copyright">
-                Copyright &copy 2020 Frosty-Snowpeople
+                </section>
+                <section class="forecast">
+                    <!-- 5 Day forecast will go here -->
+                </section>
             </div>
-            <aside class="itineraries rightColumn">
-                <!-- Saved Itineraries will go here -->
-                Your Saved Itineraries
+            <aside class="itineraryContainer rightColumn">
+                <h3>Your Itineraries</h3>
+                <div class="savedItineraries">
+                    <!-- Saved Itineraries will go here -->
+                </div>
             </aside>
-        </article>
+        
         <!-- how many dialog containers do we want to have on the index.html?? -->
         <section class="dialogContainer"></section>
     </main>
@@ -72,8 +60,8 @@
         <div class="copyright">
             Copyright &copy 2020 Frosty-Snowpeople
         </div>
+        
     </footer>
     <script type="module" src="./scripts/main.js"></script>
 </body>
-
 </html>
