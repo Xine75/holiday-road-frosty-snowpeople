@@ -6,6 +6,13 @@
       "attractionId": "1",
       "eateryId": "1",
       "id": 1
+    },
+    {
+      "name": "Mojave-Stonehenge-Frostop",
+      "parkId": "D509DC08-53AD-4661-A2EA-FC69BE456E50",
+      "attractionId": "45",
+      "eateryId": "50",
+      "id": 2
     }
   ]
 }
