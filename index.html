@@ -22,18 +22,21 @@
                 <div class="navbar__eatery">Eatery Options</div>
             </nav>
             <article class="listContainer">
-                <section class="preview">
-                    <!-- Should these be handled in the preview list or hard coded? -->
-                    <div class="preview__park"></div>
-                    <div class="preview__attraction"></div>
-                    <div id="attractionDialog"></div>
-                    <div class="preview__eatery"></div>
-                </section>
-                <section class="forecast">
-                    <!-- 5 Day forecast will go here -->
-                </section>
-                <aside class="itineraries">
+                <div class="leftColumn"
+                    <section class="preview">
+                        <!-- Should these be handled in the preview list or hard coded? -->
+                        <div class="preview__park"></div>
+                        <div class="preview__attraction"></div>
+                        <div id="attractionDialog"></div>
+                        <div class="preview__eatery"></div>
+                    </section>
+                    <section class="forecast">
+                        <!-- 5 Day forecast will go here -->
+                    </section>
+                </div>
+                <aside class="itineraries rightColumn">
                     <!-- Saved Itineraries will go here -->
+                    To be Filled With Saved Itineraries
                 </aside>
             </article>
             <!-- how many dialog containers do we want to have on the index.html?? -->
@@ -41,7 +44,7 @@
         </main>
         <footer>
             <div class="copyright">
-                copyright frosty-snowpeople 2020
+                Copyright &copy 2020 Frosty-Snowpeople
             </div>
         </footer>
         <script type="module" src="./scripts/main.js" ></script>

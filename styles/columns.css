@@ -1,0 +1,15 @@
+.listContainer{
+    display:flex;
+}
+
+.leftColumn{
+    flex:50%;
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.rightColumn{
+    flex:50%;
+    border: solid black 1px;
+    padding: 5px;
+}

@@ -1,3 +1,4 @@
+/* Navigation Bar Container */
 .navbar{
     display:flex;
     border: solid black 2px;
@@ -10,11 +11,11 @@
     flex-wrap: wrap;
 }
 
-.navbar__park, .navbar__attraction, .navbar__eatery{
+.dropdown{
     flex-basis: 20%;
 }
 
 #parkSelect, #attractionSelect, #eaterySelect{
-    width: 190px;
+    width: 220px;
     margin: 5px;
 }
