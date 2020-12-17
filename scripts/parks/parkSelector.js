@@ -27,11 +27,14 @@ eventHub.addEventListener("change", (changeEvent) => {
     let parkId = "0";
     let longitude = 0;
     let latitude = 0;
+    let parkState= ""
+    
     for (const park of parks) {
       if (changeEvent.target.value === park.id) {
         parkId = park.id;
         longitude = park.longitude;
         latitude = park.latitude;
+        parkState = park.states
       }
       }
       const customEvent = new CustomEvent("parkSelected", {
@@ -39,6 +42,7 @@ eventHub.addEventListener("change", (changeEvent) => {
           parkID: parkId,
           latitude: latitude,
           longitude: longitude,
+          parkState: parkState
         },
       });
       eventHub.dispatchEvent(customEvent);

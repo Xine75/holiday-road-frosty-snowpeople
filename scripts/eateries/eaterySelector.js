@@ -2,7 +2,6 @@
 // Also handles the selectors from the option dropdowns
 
 import { getEateries, useEateries } from "./eateryProvider.js"
-import { boolConvert } from "./eateryDialogue.js"
 
 
 //Get a refernce to the DOM element where the <select> will be rendered
@@ -49,7 +48,7 @@ const wheelchairAccessible = (eateryObject) => {
 const render = eateryCollection => {
     
     contentTarget.innerHTML = `
-        <select class ="dropdown" id="eaterySelect">
+        <select class ="dropdown" id="eaterySelect" >
             <option value="0">Please select an eatery...</option>
             ${
                 eateryCollection.map( eateryObject =>
@@ -58,4 +57,30 @@ const render = eateryCollection => {
         </select>   
     `
 }
+//filter belongs on the render to change sthe park options 
 
+// take in the parkState from the park selected payload (send on parkSelcted) ✅ 
+// spilt event.detail.parkState ✅ 
+//.map( ) to move other each state in the array
+//FIND to match each park with the same state code 
+    //using find because their is only one eatery/attraction per state 
+//this will change the need for eatery select function
+ //this is what needs to match parkStateCode ===eateryObject.state
+
+ //adding an event listener for parkselected
+ eventHub.addEventListener("parkSelected", event =>{
+
+    //access eaterys
+    const eateries = useEateries()
+    
+    //create an array for all parks, separates each state into own location of array
+    let stateArray = event.detail.parkState.split(",")
+        
+    
+    //narrow list of the eatery 
+   let matchingEatery= eateries.filter( (eateryObject) =>  stateArray.includes(eateryObject.state) )
+    
+
+    //render to drop down 
+    render(matchingEatery)
+})
