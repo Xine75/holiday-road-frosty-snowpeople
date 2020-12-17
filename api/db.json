@@ -1,10 +1,10 @@
 {
   "itineraries": [
     {
-      "name": "Tester Itinerary",
-      "parkId": "77E0D7F0-1942-494A-ACE2-9004D2BDC59E",
-      "attractionId": "1",
-      "eateryId": "1",
+      "name": "Best Trip",
+      "parkId": "6DA17C86-088E-4B4D-B862-7C1BD5CF236B",
+      "attractionId": "4",
+      "eateryId": "5",
       "id": 1
     }
   ]

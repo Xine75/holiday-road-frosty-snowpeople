@@ -12,7 +12,6 @@ export function getLocation() {
 function showPosition(position) {
   const lat = position.coords.latitude  
   const lon = position.coords.longitude
- console.log("hello",lat, lon)
   return weatherList(lat, lon)
 }
 
