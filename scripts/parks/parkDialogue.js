@@ -28,7 +28,14 @@ eventHub.addEventListener("parkDetailClicked", customEvent =>{
     <p>Entrance Fees:$${clickedPark.entranceFees[0].cost}</p>
     <p><a href=${clickedPark.url}>${clickedPark.fullName} Homepage</a></p>
     <p>Directions: ${clickedPark.directionsInfo} For more directions click <a href=${clickedPark.directionsUrl}>here</a>.</p>
-    
+    <select class="dropdown" id="activitySelect">
+    <option value="0">Activities available at this park</option>
+    ${clickedPark.activities.map((activityObject) => {
+        const allActivites = activityObject.name;
+        return `<option value=${activityObject.id}>${allActivites}</options>`;
+      })
+      .join("")}
+  </select>
     
     
   `

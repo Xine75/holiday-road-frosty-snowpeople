@@ -6,15 +6,16 @@
 export const attractionHTML = (attraction) => {
     return `
     <section class="preview__attraction">
-    <div>
+    <div class="preview__attraction--text">
     <h1 class="attraction__data--name">Bizararrie: ${attraction.name}</h1>
     <p class="attraction__data--description">${attraction.description}</p>
     <p class="attraction__data--location">${attraction.city}, ${attraction.state}</p>
     </div>
-    <button class="detail--attractions" id="attraction--${attraction.id}">Bizararrie Details</button>
+    <button class="detail--attractions" id="attraction--${attraction.id}">Details</button>
     </section>
     `
 }
+
 
 
 

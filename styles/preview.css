@@ -1,19 +1,89 @@
 .preview {
     display:flex;
     flex-wrap: wrap;
-    font-style: sans-serif;
-}
-.preview__park {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gainsboro;
-}
 
+
+    /* Styling on park preview section */
+    /* Park preview  container*/
+} 
+.park__data {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(33, 12, 174);
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 4px solid darkgreen;
+    margin-bottom: 5px;
+}
+/* park text */
+.park__data--text{
+    max-width: 80%;
+    
+}
+/* park button */
+
+.detail--park {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: firebrick;
+    color: white;
+}
+/* Styling on attraction preview section */
 .preview__attraction {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gainsboro;
+    color: rgb(33, 12, 174);
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+/* attraction text */
+.preview__attraction--text {
+    max-width: 80%;
+}
+/* attraction button */
+.detail--attractions {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: firebrick;
+    color: white;
+    
 }
 
+/* Styling on eatery preview section */
 .preview__eatery {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gainsboro;
+    color: rgb(33, 12, 174);
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid darkgreen;
 }
+/* eatery text */
+.eatery__data{
+    max-width: 80%;
+}
+/* eatery button */
+.detail__eatery {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: firebrick;
+    color: white;
+
+}
+

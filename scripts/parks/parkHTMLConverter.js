@@ -21,11 +21,12 @@ eventHub.addEventListener("click", event =>{
 export const parkHTMLConverter = parkObject => {
   return `
     <section class="park__data">
-      <div>
-        <h1>${parkObject.fullName}</h2>        
-        <p>Description: ${parkObject.description}</p>
+      <div class="park__data--text">
+        <h1>${parkObject.fullName}</h2>  
+        <p><a href=${parkObject.url}>${parkObject.fullName} Homepage</a></p>
+        <p>Description:${parkObject.description}</p>
       </div>
-       <button id="detail--${parkObject.id}">Details</button>
+       <button class="detail--park"id="detail--${parkObject.id}">Details</button>
   </section>
   `
 }
