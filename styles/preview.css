@@ -30,7 +30,7 @@
     border-radius: 50%;
     border: 1px solid white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: firebrick;
+    background-color: darkgreen;
     color: white;
 }
 /* Styling on attraction preview section */
@@ -55,7 +55,7 @@
     border-radius: 50%;
     border: 1px solid white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: firebrick;
+    background-color: darkgreen;
     color: white;
     
 }
@@ -69,6 +69,7 @@
     align-items: center;
     justify-content: space-around;
     border-top: 2px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
 }
 /* eatery text */
 .eatery__data{
@@ -82,7 +83,7 @@
     border-radius: 50%;
     border: 1px solid white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: firebrick;
+    background-color: darkgreen;
     color: white;
 
 }

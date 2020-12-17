@@ -1,12 +1,18 @@
 /* Navigation Bar Container */
+
+
+
+
 .navbar{
     /* display:flex; */
-    border: solid darkgreen 2px;
+    border: solid white 5px;
     padding: 5px;
     min-width: 20%;
     max-width: 80%;
     border-radius: 10px;
     margin: auto;
+    background-color: darkgreen;
+    padding-bottom: 10px;
     /* justify-content: space-around; */
     /* flex-wrap: wrap; */
 }
