@@ -21,7 +21,6 @@ getParks()
 
 
 
-
 import { attractionSelect } from "./attractions/attractionSelect.js"
 attractionSelect()
 import "./attractions/attractionPreview.js"
