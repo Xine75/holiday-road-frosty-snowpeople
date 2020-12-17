@@ -24,7 +24,7 @@ eventHub.addEventListener("parkDetailClicked", customEvent =>{
   const clickedPark = useParks().find( park  => park.id === customEvent.detail.clickedParkId)
 
   parkDialogText.innerHTML = `
-    <h3>${clickedPark.name}</h3>
+    <h2>${clickedPark.name}</h2>
     <p>Entrance Fees:$${clickedPark.entranceFees[0].cost}</p>
     <p><a href=${clickedPark.url}>${clickedPark.fullName} Homepage</a></p>
     <p>Directions: ${clickedPark.directionsInfo} For more directions click <a href=${clickedPark.directionsUrl}>here</a>.</p>
