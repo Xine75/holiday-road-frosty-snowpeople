@@ -1,32 +1,18 @@
-// previewList()
-// parkSelect()
-// eaterySelect()
-// attractionSelect()
-// itineraryList()
-import { getEateries } from "./eateries/eateryProvider.js"
-import { getAttractions } from "./attractions/AttractionProvider.js"
-import { EaterySelect } from "./eateries/eaterySelector.js"
-import { getParks } from "./parks/ParkProvider.js"
-import "./weather/weatherList.js";
-import "./previewList.js"
-import "./eateries/eateryPreview.js"
-import "./savedItineraries/itineraryForm.js";
-
-EaterySelect()
-console.log(getAttractions())
-console.log(getEateries())
-getParks()
-
-
-
-
-
-
+// Imports -- Functions
+import { getParks } from "./parks/ParkProvider.js";
 import { attractionSelect } from "./attractions/attractionSelect.js"
-attractionSelect()
+import { EaterySelect } from "./eateries/eaterySelector.js";
+import { itineraryList } from "./savedItineraries/itineraryList.js";
+
+// Imports -- Files
+import "./weather/weatherList.js";
+import "./previewList.js";
+import "./eateries/eateryPreview.js";
+import "./savedItineraries/itineraryForm.js";
 import "./attractions/attractionPreview.js"
 
-
-
-import { itineraryList } from "./savedItineraries/itineraryList.js";
+// Function Calls
+getParks()
+attractionSelect()
+EaterySelect()
 itineraryList();
