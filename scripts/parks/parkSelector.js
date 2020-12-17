@@ -9,14 +9,15 @@ export const parkSelector = () => {
     () =>
       (parkSelectorTarget.innerHTML = `
     <select class="dropdown" id="parkSelect">
-      <option value="0">Please select a park...</option>
+      <option value="0">Please select a national park...</option>
       ${useParks()
         .map((parkObject) => {
           const allParks = parkObject.fullName;
           return `<option value=${parkObject.id}>${allParks}</options>`;
         })
         .join("")}
-    </select>`)
+    </select>`
+   )
   );
 };
 

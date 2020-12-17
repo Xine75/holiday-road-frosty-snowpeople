@@ -11,6 +11,8 @@ const eventHub = document.querySelector(".container")
 /* 
 Rendering parks to the DOM
 */
+const weatherTitle = document.querySelector(".weatherHeader")
+
 const parkPreviewTarget = document.querySelector(".preview__park")
 
 //eventlistener for selector to render to DOM
@@ -29,7 +31,7 @@ eventHub.addEventListener("parkSelected", customEvent => {
     const parkArray = useParks()
     const foundPark =
     parkArray.find( parkObject => parkObject.id === customEvent.detail.parkID )
-   return  parkPreviewTarget.innerHTML =` ${parkHTMLConverter(foundPark)} ${parkDialog()}`
+   return  parkPreviewTarget.innerHTML =` ${parkHTMLConverter(foundPark)} ${parkDialog()}`, weatherTitle.innerHTML = `<div><h3>${foundPark.fullName}'s current weather</h3></div>`
     }
    
 })
