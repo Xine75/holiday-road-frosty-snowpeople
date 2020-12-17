@@ -1,11 +1,12 @@
 .forecast{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .forecast__day{
     border:solid white 5px;
-    padding: 2px;
+    padding: 10px;
     margin: 5px;
     min-width: 110px;
     width: 160px;
