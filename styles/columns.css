@@ -4,18 +4,23 @@
 
 .leftColumn{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: wheat;
+    color: rgb(33, 12, 174);
     flex:70%;
     border: solid white 1px;
-    padding: 5px;
+    padding: 15px;
     min-height: 100px;
-    
+    border-radius: 20px;
+    background-color: wheat;
+    margin: 10px;
 }
 
 .rightColumn{
     flex:30%;
     border: solid white 1px;
-    padding: 5px;
+    padding: 15px;
+    background-color:rgb(33, 12, 174);
+    border-radius: 20px;
+    margin: 10px;
     
 }
 .rightColumn{

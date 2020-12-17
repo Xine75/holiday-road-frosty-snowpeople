@@ -1,7 +1,7 @@
 /* Navigation Bar Container */
 .navbar{
     /* display:flex; */
-    border: solid black 2px;
+    border: solid darkgreen 2px;
     padding: 5px;
     min-width: 20%;
     max-width: 80%;

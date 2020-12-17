@@ -8,11 +8,13 @@
 } 
 .park__data {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gainsboro;
+    color: rgb(33, 12, 174);
     display: flex;
     flex: wrap;
     align-items: center;
     justify-content: space-around;
+    border-bottom: 4px solid darkgreen;
+    margin-bottom: 5px;
 }
 /* park text */
 .park__data--text{
@@ -28,16 +30,18 @@
     border-radius: 50%;
     border: 1px solid white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #81b29a;
+    background-color: firebrick;
+    color: white;
 }
 /* Styling on attraction preview section */
 .preview__attraction {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gainsboro;
+    color: rgb(33, 12, 174);
     display: flex;
     flex: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 5px;
 }
 /* attraction text */
 .preview__attraction--text {
@@ -51,18 +55,20 @@
     border-radius: 50%;
     border: 1px solid white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #81b29a;
+    background-color: firebrick;
+    color: white;
     
 }
 
 /* Styling on eatery preview section */
 .preview__eatery {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gainsboro;
+    color: rgb(33, 12, 174);
     display: flex;
     flex: wrap;
     align-items: center;
     justify-content: space-around;
+    border-top: 2px solid darkgreen;
 }
 /* eatery text */
 .eatery__data{
@@ -76,7 +82,8 @@
     border-radius: 50%;
     border: 1px solid white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #81b29a;
+    background-color: firebrick;
+    color: white;
 
 }
 

@@ -4,15 +4,14 @@
 }
 
 .forecast__day{
-    border:solid black 1px;
+    border:solid white 5px;
     padding: 2px;
     margin: 5px;
     min-width: 110px;
+    width: 160px;
     text-align: center;
     background: lightskyblue;
     color: black;
-    width: 160px;
+    border-radius: 15px;
 
 }
-
-.forecast__da
