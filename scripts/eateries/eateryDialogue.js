@@ -40,7 +40,7 @@ export const eateryDialog = (clickedEatery) =>{
     return ` 
         <dialog id="eateryDialog">
             <div id="eateryDialog__text">
-            <h3> ${clickedEatery.businessName} </h3>
+            <h2> ${clickedEatery.businessName} </h2>
             <div id="wheelchair">♿WheelChair: ${boolConvert(clickedEatery.ameneties.wheelchairAccessible)}</div>
             <div id="petFriendly">🐕Pet Friendly: ${boolConvert(clickedEatery.ameneties.petFriendly)}</div>
             <div id="wifi">📶Wifi: ${boolConvert(clickedEatery.ameneties.wifi)}</div>
