@@ -1,6 +1,6 @@
 // Handles the user-input itinerary name & save itinerary button in the previewList
 // Imports
-import { saveItinerary } from "./itineraryDataProvider.js";
+import { getItineraries, useItineraries, saveItinerary } from "./itineraryDataProvider.js";
 
 // Selectors
 // --In order--
@@ -49,16 +49,28 @@ nameField.addEventListener("input", () => {
 
 // Handles the events that take place when a user saves their selected itinerary (park / attraction / eatery / itinerary name)
 saveButton.addEventListener("click", ()=> {
-    // Prepare the new itinerary to be sent to the JSON file
-    const newItinerary = {
-        name: name,
-        parkId: parkId,
-        attractionId: attractionId,
-        eateryId: eateryId
-    };
+    getItineraries().then(() => {
+        const itineraries = useItineraries();
+        const itineraryNames = itineraries.map(object => object.name);
+        // Check to see if the user-input name is already an itinerary in the local db.json file
+        if(itineraryNames.includes(name)){
+            alert("This itinerary name is already in use. Please select another name.");
+        }
+
+        // If the name is not already in use, continue saving the itinerary
+        else{
+            // Prepare the new itinerary to be sent to the JSON file
+            const newItinerary = {
+                name: name,
+                parkId: parkId,
+                attractionId: attractionId,
+                eateryId: eateryId
+            };
     
-    // Tell the JSON file that a new itinerary needs to be saved to it.
-    saveItinerary(newItinerary);
+            // Tell the JSON file that a new itinerary needs to be saved to it.
+            saveItinerary(newItinerary);
+        }
+    })
 });
 
 
