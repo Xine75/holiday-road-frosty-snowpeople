@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Holiday Road</title>
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img class="logo" src="./images/TransLogo.png" alt="logo">
-            </div>
-            <div class="title">
-                 
-            </div>
-        </header>
-        <main class="container">
-            <nav class="navbar">
-                
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Road</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo" src="./images/TransLogo.png" alt="logo">
+        </div>
+        <div class="title">
+            <h1>Holiday Road</h1>
+            <h3>Stay Frosty</h3>
+        </div>
+    </header>
+    <main class="container">
+        <!-- <div class="website_title">
+        </div> -->
+        <nav class="navbar">
+            <div class="navbar_title" id="title"> Create the Road Trip of Your Dreams </div>
+            <section class="navbar_select">
                 <div class="navbar__park">Park Options</div>
                 <div class="navbar__attraction">Attraction Options</div>
                 <div class="navbar__eatery">Eatery Options</div>
-            </nav>
-            <article class="listContainer">
-                <div class="leftColumn">Your Current Choices
-                
-                    <section class="preview">
-                        <!-- Should these be handled in the preview list or hard coded? -->
-                        <div class="preview__park"></div>
-                        <div class="preview__attraction"></div>
-                        <div id="attractionDialog"></div>
-                        <div class="preview__eatery"></div>
-                        <div class="itineraryFormContainer">
-                            <input type="text" id="itineraryName" size="40" placeholder="Please enter an itinerary name">
-                            <input type="button" id="saveItinerary" value="Save Itinerary" disabled>
-                        </div>
-                    </section>
-                    <section class="forecast">
-                        <!-- 5 Day forecast will go here -->
-                    </section>
-                </div>
-                <aside class="itineraryContainer rightColumn">
-                    <h3>Your Itineraries</h3>
-                    <div class="savedItineraries">
-                        <!-- Saved Itineraries will go here -->
+        </nav>
+        <article class="listContainer">
+            <div class="leftColumn">Your Current Choices
+
+                <section class="preview">
+                    <!-- Should these be handled in the preview list or hard coded? -->
+                    <div class="preview__park"></div>
+                    <div class="preview__attraction"></div>
+                    <div id="attractionDialog"></div>
+                    <div class="preview__eatery"></div>
+                    <div class="itineraryFormContainer">
+                        <input type="text" id="itineraryName" size="40" placeholder="Please enter an itinerary name">
+                        <input type="button" id="saveItinerary" value="Save Itinerary" disabled>
                     </div>
-                </aside>
-            </article>
-            <!-- how many dialog containers do we want to have on the index.html?? -->
-            <section class="dialogContainer"></section>
-        </main>
-        <footer>
-            <div class="copyright">
-                Copyright &copy 2020 Frosty-Snowpeople
+                </section>
+                <section class="forecast">
+                    <!-- 5 Day forecast will go here -->
+                </section>
             </div>
-        </footer>
-        <script type="module" src="./scripts/main.js" ></script>
-    </body>
+            <aside class="itineraryContainer rightColumn">
+                <h3>Your Itineraries</h3>
+                <div class="savedItineraries">
+                    <!-- Saved Itineraries will go here -->
+                </div>
+            </aside>
+        
+        <!-- how many dialog containers do we want to have on the index.html?? -->
+        <section class="dialogContainer"></section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            Copyright &copy 2020 Frosty-Snowpeople
+        </div> 
+    </footer>
+    
+    <script type="module" src="./scripts/main.js"></script>
+</body>
 </html>
