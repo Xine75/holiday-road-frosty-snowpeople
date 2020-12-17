@@ -22,7 +22,7 @@ export const eatery = (eatery) => {
     <p class="eatery__data--description"> ${eatery.description}</p>
     <p class ="eatery__data--location"> ${eatery.city}, ${eatery.state}</p>
     </div>
-    <button type="text" id="eatery--${eatery.id}" class="detail__eatery">Eatery Detail</button>
+    <button type="text" id="eatery--${eatery.id}" class="detail__eatery">Details</button>
     </article>
     `
 }

@@ -4,7 +4,7 @@
 import { useAttractions } from "./AttractionProvider.js"
 
 const eventHub = document.querySelector(".container")
-const attractionDialog = document.querySelector("#attractionDialog")
+const attractionDialog = document.querySelector(".dialogContainer")
 
 const boolConvert = (bool) => {
     if(bool === true) {

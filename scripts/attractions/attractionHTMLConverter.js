@@ -11,10 +11,11 @@ export const attractionHTML = (attraction) => {
     <p class="attraction__data--description">${attraction.description}</p>
     <p class="attraction__data--location">${attraction.city}, ${attraction.state}</p>
     </div>
-    <button class="detail--attractions" id="attraction--${attraction.id}">Bizararrie Details</button>
+    <button class="detail--attractions" id="attraction--${attraction.id}">Details</button>
     </section>
     `
 }
+
 
 
 
