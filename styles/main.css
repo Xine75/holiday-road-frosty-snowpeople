@@ -6,8 +6,28 @@
 @import "./preview.css";
 @import "./title.css";
 
-html {
-    font-style: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+
+
+.title {
+    font-family: Architects Daughter;
+    flex-direction: column;
+    width: 80%;
+    /* -webkit-text-stroke: 2px rgb(33, 12, 174); */
+    background-color: rgb(33, 12, 174, .75);
+    border-radius: 20px;
+    
+}
+
+.name{
+    margin-bottom: 5px;
+}
+.tagline {
+    margin-left: 40%;
+    margin-top: 5px;
+    color: wheat
 
 }
 
