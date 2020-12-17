@@ -16,7 +16,7 @@
     flex-direction: column;
     width: 80%;
     /* -webkit-text-stroke: 2px rgb(33, 12, 174); */
-    background-color: rgb(33, 12, 174, .75);
+    color: rgb(33, 12, 174);
     border-radius: 20px;
     
 }
@@ -27,7 +27,7 @@
 .tagline {
     margin-left: 40%;
     margin-top: 5px;
-    color: wheat
+    
 
 }
 
