@@ -1,39 +1,11 @@
 {
   "itineraries": [
     {
-      "name": "Tester Itinerary",
-      "parkId": "77E0D7F0-1942-494A-ACE2-9004D2BDC59E",
-      "attractionId": "1",
-      "eateryId": "1",
-      "id": 1
-    },
-    {
-      "name": "this is a test",
+      "name": "Best Trip",
       "parkId": "6DA17C86-088E-4B4D-B862-7C1BD5CF236B",
       "attractionId": "4",
       "eateryId": "5",
-      "id": 2
-    },
-    {
-      "name": "Tester Itinerar",
-      "parkId": "C4E1A9A4-D121-4734-94FA-7788A93C2AAA",
-      "attractionId": "44",
-      "eateryId": "46",
-      "id": 3
-    },
-    {
-      "name": "Lets See",
-      "parkId": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
-      "attractionId": "12",
-      "eateryId": "4",
-      "id": 4
-    },
-    {
-      "name": "Woohoo",
-      "parkId": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
-      "attractionId": "2",
-      "eateryId": "46",
-      "id": 5
+      "id": 1
     }
   ]
 }
