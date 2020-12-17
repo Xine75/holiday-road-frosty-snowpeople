@@ -5,9 +5,10 @@
 @import "./navbar.css";
 @import "./preview.css";
 @import "./title.css";
+@import "./dialog.css";
+
 html {
     font-style: sans-serif;
-
 }
 
 body {
