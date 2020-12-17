@@ -8,8 +8,10 @@
     height: 250px;
     max-height: 100%; 
     padding: 30px;
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 5px darkgreen;
     border: 2px solid gray;
+    border-radius: 15px;
+    text-align: left;
 }
 
 #parkDialog{
@@ -24,6 +26,8 @@
     padding: 30px;
     box-shadow: 5px 5px black;
     border: 2px solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 5px darkgreen;
 }
 
 /* .associate-dialog {
