@@ -8,9 +8,9 @@ const attractionDialog = document.querySelector(".dialogContainer")
 
 const boolConvert = (bool) => {
     if(bool === true) {
-        return "yes"
+        return "Yes"
     } else {
-        return "no"
+        return "No"
     }
 }
 
@@ -19,8 +19,8 @@ const dialogBox = (attraction) => {
     attractionDialog.innerHTML = `
     <dialog id="dialog">
     <h2>${attraction.name}</h2>
-        <h3>🛍️ Sells souvenirs? ${boolConvert(attraction.ameneties.souvenirs)}</h3>
-        <h3>🚻  Restroom available? ${boolConvert(attraction.ameneties.restrooms)}</h3>
+        <p>🛍️ Sells souvenirs: ${boolConvert(attraction.ameneties.souvenirs)}</p>
+        <p>🚻  Restroom available: ${boolConvert(attraction.ameneties.restrooms)}</p>
         
  
     <button class="button--close" id="button--close">Close</button>

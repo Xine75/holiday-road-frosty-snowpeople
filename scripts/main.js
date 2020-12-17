@@ -12,7 +12,7 @@ import "./savedItineraries/itineraryForm.js";
 import "./attractions/attractionPreview.js"
 import "./weather/localWeather.js"
 // Function Calls
-getParks()
-attractionSelect()
-EaterySelect()
+getParks();
+attractionSelect();
+EaterySelect();
 itineraryList();
