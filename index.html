@@ -29,15 +29,16 @@
                 <div class="navbar__eatery">Eatery Options</div>
         </nav>
         <article class="listContainer">
-            <div class="leftColumn">Your Current Choices
+            <div class="leftColumn">
+                <h3>Your Current Choices</h3>
 
                 <section class="preview">
                     <!-- Should these be handled in the preview list or hard coded? -->
                     <div class="preview__park"></div>
                     <div class="preview__attraction"></div>
-                    <div id="attractionDialog"></div>
                     <div class="preview__eatery"></div>
                     <div class="itineraryFormContainer">
+                        <section class="dialogContainer"></section>
                         <input type="text" id="itineraryName" size="40" placeholder="Please enter an itinerary name">
                         <input type="button" id="saveItinerary" value="Save Itinerary" disabled>
                     </div>
@@ -54,7 +55,7 @@
             </aside>
         
         <!-- how many dialog containers do we want to have on the index.html?? -->
-        <section class="dialogContainer"></section>
+        
     </main>
 
     <footer>
