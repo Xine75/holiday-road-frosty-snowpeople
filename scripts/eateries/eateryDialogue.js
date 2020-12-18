@@ -12,7 +12,7 @@ eventHub.addEventListener("click", event =>{
     }
 })
 
-//where is eateriesDialog?
+
 eventHub.addEventListener("eateryBtnClicked", event =>{
     const dialogContainer = document.querySelector(".dialogContainer")
     
@@ -27,6 +27,7 @@ eventHub.addEventListener("eateryBtnClicked", event =>{
         dialog.showModal()
 })
 
+//change bool to yes or no
 export const boolConvert = (bool) =>{
     if(bool === true){
         return "Yes"

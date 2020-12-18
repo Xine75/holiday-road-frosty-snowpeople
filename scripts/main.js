@@ -6,7 +6,9 @@ import { itineraryList } from "./savedItineraries/itineraryList.js";
 
 // Imports -- Files
 import "./weather/weatherList.js";
-import "./previewList.js";
+import "./parks/parkPreview.js"
+import "./attractions/attractionPreview.js"
+import "./eateries/eateryPreview.js";
 import "./savedItineraries/itineraryForm.js";
 import "./attractions/attractionPreview.js";
 import "./weather/localWeather.js";

@@ -51,13 +51,13 @@ const render = attractionsCollection => {
 
 //adding an event listener for parkselected
 eventHub.addEventListener("parkSelected", (event) => {
-    //access eaterys
+    //access attraction
     const attraction = useAttractions();
 
     //create an array for all parks, separates each state into own location of array
     let stateArray = event.detail.parkState.split(",");
 
-    //narrow list of the eatery
+    //narrow list of the attraction
     let matchingEatery = attraction.filter((attractionObject) => stateArray.includes(attractionObject.state));
     
     //render to drop down
