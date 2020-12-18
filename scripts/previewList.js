@@ -17,3 +17,4 @@
 
 
  import "./attractions/attractionPreview.js"
+ import "./eateries/eateryPreview.js";

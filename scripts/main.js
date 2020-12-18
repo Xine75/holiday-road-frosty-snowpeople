@@ -7,11 +7,10 @@ import { itineraryList } from "./savedItineraries/itineraryList.js";
 // Imports -- Files
 import "./weather/weatherList.js";
 import "./previewList.js";
-import "./eateries/eateryPreview.js";
 import "./savedItineraries/itineraryForm.js";
-import "./attractions/attractionPreview.js"
-import "./weather/localWeather.js"
-import "./eateries/eateryDialogue.js"
+import "./attractions/attractionPreview.js";
+import "./weather/localWeather.js";
+import "./eateries/eateryDialogue.js";
 // Function Calls
 getParks();
 attractionSelect();
