@@ -12,7 +12,7 @@ import "./eateries/eateryPreview.js";
 import "./savedItineraries/itineraryForm.js";
 import "./attractions/attractionPreview.js";
 import "./weather/localWeather.js";
-import "./eateries/eateryDialogue.js";
+
 // Function Calls
 getParks();
 attractionSelect();

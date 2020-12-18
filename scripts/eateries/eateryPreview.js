@@ -1,5 +1,6 @@
 import { useEateries } from "./eateryProvider.js"
 import { eatery } from "./eateryHTML.js"
+import "./eateryDialogue.js";
 
 const eateryElement = document.querySelector(".preview__eatery")
 const eventHub = document.querySelector(".container")
