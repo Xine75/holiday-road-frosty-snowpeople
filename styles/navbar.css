@@ -1,10 +1,6 @@
 /* Navigation Bar Container */
 
-
-
-
 .navbar{
-    /* display:flex; */
     border: solid white 5px;
     padding: 5px;
     min-width: 20%;
@@ -13,14 +9,14 @@
     margin: auto;
     background-color: darkgreen;
     padding-bottom: 10px;
-    /* justify-content: space-around; */
-    /* flex-wrap: wrap; */
 }
+
 .navbar_select{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .navbar_title{
     font-size: larger;
     text-align: center;
