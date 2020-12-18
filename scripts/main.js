@@ -10,7 +10,6 @@ import "./parks/parkPreview.js"
 import "./attractions/attractionPreview.js"
 import "./eateries/eateryPreview.js";
 import "./savedItineraries/itineraryForm.js";
-import "./attractions/attractionPreview.js";
 import "./weather/localWeather.js";
 
 // Function Calls

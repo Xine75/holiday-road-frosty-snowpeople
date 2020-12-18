@@ -55,16 +55,9 @@ const render = (eateryCollection) => {
         </select>   
     `;
 };
-//filter belongs on the render to change sthe park options
+
 
 // take in the parkState from the park selected payload (send on parkSelcted) ✅
-// spilt event.detail.parkState ✅
-//.map( ) to move other each state in the array
-//FIND to match each park with the same state code
-//using find because their is only one eatery/attraction per state
-//this will change the need for eatery select function
-//this is what needs to match parkStateCode ===eateryObject.state
-
 //adding an event listener for parkselected
 eventHub.addEventListener("parkSelected", (event) => {
     //access eaterys
@@ -73,7 +66,7 @@ eventHub.addEventListener("parkSelected", (event) => {
     //create an array for all parks, separates each state into own location of array
     let stateArray = event.detail.parkState.split(",");
 
-    //narrow list of the eatery
+    //narrow list of the eatery by finding matching state codes
     let matchingEatery = eateries.filter((eateryObject) => stateArray.includes(eateryObject.state));
     
     //render to drop down
