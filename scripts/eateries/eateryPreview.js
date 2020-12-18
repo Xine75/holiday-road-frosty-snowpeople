@@ -9,7 +9,7 @@ const eventHub = document.querySelector(".container")
 eventHub.addEventListener("eaterySelect", event =>{
 
     //check that eatery was selected
-    if(event.detail.eateryChosen !== "0"){
+    if(event.detail.eateryChosen !== "0" ){
 
         const eateries = useEateries()
         const currentEatery = eateries.find( (eatery) => eatery.id === parseInt(event.detail.eateryChosen))
@@ -18,5 +18,5 @@ eventHub.addEventListener("eaterySelect", event =>{
 
     }
 
-
 })
+
